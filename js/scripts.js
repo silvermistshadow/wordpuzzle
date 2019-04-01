@@ -1,17 +1,20 @@
 //Back end logic
-var output = [];
 function withoutVowels(sentence) {
   var vowels = ['a', 'i', 'u', 'e', 'o']
   var withoutVowels = "";
   var letter;
-  for (var i = 0; i < sentence.length-1; i++) {
+  var splot = sentence.split("");
+
+  for (var i = 0; i < splot.length-1; i++) {
   		vowels.forEach(function(letter) {
-        if (vowel) {
-          sentence[i] = "-"
+        if (splot[i] === letter) {
+          splot[i] = "-";
         }
       })
     }
-    return output.join("");
+    var puzzle = splot.join("");
+    return puzzle;
+
   }
 
 var sentence = "This is an example."
