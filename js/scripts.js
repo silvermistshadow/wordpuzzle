@@ -16,10 +16,22 @@ function withoutVowels(sentence) {
     return puzzle;
 
   }
-
-var sentence = "This is an example."
-
-console.log(withoutVowels(sentence));
-
-
 //user interface
+$(document).ready(function(){
+  $("#formOne").submit(function(event){
+    event.preventDefault();
+    var sentence = $("input#sentInput").val();
+
+    var puzzle = withoutVowels(sentence);
+
+    $("#puzzleOut").text(puzzle);
+    $("#output").show();
+    $("#formBox").hide();
+
+  });
+  $("#clearOut").click(function(){
+    $("#formBox").show();
+    $("#output").hide();
+  });
+
+});

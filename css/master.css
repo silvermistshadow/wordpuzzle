@@ -1,0 +1,18 @@
+#output {
+  display: none;
+}
+
+#puzzleOut {
+  font-family: monospace;
+  margin: 8px;
+  padding: 10px;
+  border-width: 12px;
+  
+}
+
+#formBox {
+  max-width: 500px;
+  margin: 10px;
+  padding: 8px;
+  border-width: medium;
+}
